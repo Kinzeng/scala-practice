@@ -1,3 +1,5 @@
+// reverse the list
+
 def reverse[T](list: List[T]): List[T] =
   list.foldLeft(List[T]())((cur, prev) => prev :: cur)
 

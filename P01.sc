@@ -1,3 +1,5 @@
+// find the last element in the list
+
 def last[T](list: List[T]): T = list match {
   case elem :: Nil => elem
   case _ :: tail => last(tail)

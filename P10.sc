@@ -1,3 +1,5 @@
+// run-length encoding of a list
+
 def pack[T](list: List[T]): List[List[T]] = {
   def packRec(list: List[T]): List[List[T]] = list match {
     case Nil => Nil

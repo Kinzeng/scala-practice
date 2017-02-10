@@ -1,3 +1,5 @@
+// find the kth element in the list
+
 def kthElement[T](list: List[T], k: Int): T = {
   list match {
     case elem :: tail =>
@@ -7,7 +9,7 @@ def kthElement[T](list: List[T], k: Int): T = {
   }
 }
 
-// better way
+// makes better use of pattern matching
 // def kthElement[T](list: List[T], k: Int): T = (k, list) match {
 //     case (0, elem :: tail) => elem
 //     case (k, _ :: tail) => kthElement(tail, k - 1)

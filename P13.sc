@@ -1,3 +1,6 @@
+// directly implement run-length encoding without using helper
+// functions (pack)
+
 def runLength[T](list: List[T]): List[(Int, T)] = list match {
   case Nil => Nil
   case l: List[T] =>

@@ -1,4 +1,5 @@
-// duplicate the elements of a list
+// duplicate the elements of a list N times
+// turns out I jumped the gun on problem 14, just copied and pasted here
 
 // def duplicate[T](list: List[T]): List[T] =
 //   list.flatMap((e) => List.fill(2)(e))

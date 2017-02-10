@@ -1,3 +1,5 @@
+// find the length of the list
+
 def length[T](list: List[T]): Int = {
   list match {
     case Nil => 0

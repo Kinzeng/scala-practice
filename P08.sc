@@ -1,3 +1,5 @@
+// eliminate consecutive duplicates of list elements
+
 def compress[T](list: List[T]): List[T] = {
   def compRec(list: List[T]): List[T] = list match {
     case Nil => Nil

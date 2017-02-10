@@ -1,3 +1,6 @@
+// modified run-length encoding where if the length of the run is
+// only 1, insert the element itself
+
 def pack[T](list: List[T]): List[List[T]] = {
   def packRec(list: List[T]): List[List[T]] = list match {
     case Nil => Nil

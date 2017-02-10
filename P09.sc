@@ -1,3 +1,5 @@
+// pack consecutive duplicates of list elements into sublists
+
 def pack[T](list: List[T]): List[List[T]] = {
   def packRec(list: List[T]): List[List[T]] = list match {
     case Nil => Nil

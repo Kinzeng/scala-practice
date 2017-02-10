@@ -1,5 +1,6 @@
-def isPalindrome[T](list: List[T]): Boolean = list == list.reverse
+// find out if a list is a palindrome
 
+def isPalindrome[T](list: List[T]): Boolean = list == list.reverse
 
 import TestCases._
 println(list1)

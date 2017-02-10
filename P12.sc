@@ -1,3 +1,5 @@
+// decode a run-length encoded list
+
 def pack[T](list: List[T]): List[List[T]] = {
   def packRec(list: List[T]): List[List[T]] = list match {
     case Nil => Nil
@@ -19,7 +21,7 @@ def decodeRunLength[T](list: List[(Int, T)]): List[T] =
     _ <- Range(0, run._1)
   } yield run._2
 
-// list.flatMap((run) => List.make(run._1, run._2))
+// list.flatMap((run) => List.fill(run._1, run._2))
 
 import TestCases._
 list6

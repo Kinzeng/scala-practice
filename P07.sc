@@ -1,5 +1,7 @@
+// flatten a nested list structure
+
 def flatten[T](list: List[T]): List[T] = list.flatMap {
-  case ms: List[T] => flatten(ms)
+  case l: List[T] => flatten(l)
   case elem => List(elem)
 }
 
