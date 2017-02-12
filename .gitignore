@@ -1,0 +1,6 @@
+scala-practice.iml
+build
+gradle
+.idea
+.gradle
+gradle.properties
