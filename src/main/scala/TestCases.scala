@@ -9,6 +9,7 @@ object TestCases {
   val list5 = List(List(1, 1), "hello", "suhh", List("what", "the", "heck"))
   val list6 = List("a", "a", "a", "b", "b", "c", "c", "c", "c", "d")
   val list7 = List(List("a", "b", "c"), List("a"), List("a", "b"), List("a", "b"), List("a", "b"), List("a"))
+  val list8 = List(('a', 45), ('b', 13), ('c', 12), ('d', 16), ('e', 9), ('f', 5))
 
   def time[T](f: => T): T = {
     val start = System.currentTimeMillis()
